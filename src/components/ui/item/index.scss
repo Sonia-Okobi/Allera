@@ -1,3 +1,5 @@
+@import "../../../assets/styles/mixins";
+
 .reason {
   display: flex;
   gap: 16px;
@@ -18,7 +20,7 @@
     color: #fff;
 
     &__description {
-      max-width: 385px;
+      max-width: 470px;
     }
   }
 }

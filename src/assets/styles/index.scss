@@ -1,6 +1,5 @@
 @import "./mixins";
-@import "../fonts/worksans/font.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,500;9..40,600&display=swap');
 :root {
   --primary-color: #7847e1;
   --secondary-color: #a7b1bc;
@@ -17,13 +16,13 @@
   border: 0;
   outline: none;
   list-style: none;
+  font-family: 'DM Sans', sans-serif;
 }
 
 body {
   color: var(--text-color);
-  font-weight: 500;
+  font-weight: 300;
   background: var(--background);
-  font-family: "Work Sans", sans-serif;
 }
 
 button {
