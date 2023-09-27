@@ -1,0 +1,12 @@
+.navbar {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &__content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,87 @@
+@import "./mixins";
+@import "../fonts/worksans/font.scss";
+
+:root {
+  --primary-color: #7847e1;
+  --secondary-color: #a7b1bc;
+  --text-color: #1c2127;
+  --background: #f8f8f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  color: var(--text-color);
+  font-weight: 500;
+  background: var(--background);
+  font-family: "Work Sans", sans-serif;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+.app-container {
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @include mobile(986px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__section {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 64px;
+
+  @include mobile(600px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 64px;
+
+  @include mobile(600px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 48px;
+
+  @include mobile(600px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 32px;
+}

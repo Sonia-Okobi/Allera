@@ -1,0 +1,24 @@
+.reason {
+  display: flex;
+  gap: 16px;
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    background: #3f4443;
+    border-radius: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    &__description {
+      max-width: 385px;
+    }
+  }
+}

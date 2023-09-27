@@ -1,0 +1,16 @@
+.base-button {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 8px 20px;
+  width: fit-content;
+  border-radius: 8px;
+
+  &--primary {
+    @extend .base-button;
+    background: var(--primary-color);
+    color: #fff;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../../../assets/styles/mixins";
+
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  position: relative;
+  border-radius: 25px;
+  color: #fff;
+  background: #262b31;
+  padding: 32px;
+  z-index: 3;
+  border: 1.5px solid #584a5285;
+  box-shadow: 14px 13px 0 #1f242a;
+
+  @include mobile(600px) {
+    padding: 16px;
+  }
+
+  &__title {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 40px;
+      height: 4px;
+      border-radius: 100px;
+      background: linear-gradient(
+        109.12deg,
+        #c0cffe 0.42%,
+        #f3dff4 57.74%,
+        #f9d8e5 98.62%
+      );
+      position: absolute;
+      left: 0;
+      top: 64px;
+      opacity: 24%;
+    }
+  }
+}
